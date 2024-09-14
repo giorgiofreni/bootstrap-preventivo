@@ -28,22 +28,29 @@ formElement.addEventListener('submit', function(event){
     prezzoOrario = 33.6
   }
 
-  console.log(prezzoOrario)
 
   let prezzoTot = prezzoOrario * 10
   
 //   verifica codice promo
   const promoCodeElement = document.getElementById('promoCode')
-  let validPromoCode = 'ciao'
+  let validPromoCode = ['YHDNU32', 'JANJC63', 'PWKCN25', 'SJDPO96', 'POCIE24'] //array(string)
   let prezzoScontato = 0
-  if (validPromoCode === promoCodeElement.value) {
-    prezzoScontato = prezzoOrario * 10 * 0.25
-    console.log(prezzoScontato)
-    prezzoTot = prezzoTot - prezzoScontato
-    console.log(prezzoTot)
+
+  //ciclo
+  for (let i = 0; i < validPromoCode.length; i++) {
+    const CurrentPromo = validPromoCode[i]
+    console.log(CurrentPromo)
+    if (CurrentPromo === promoCodeElement.value) {
+        prezzoScontato = prezzoOrario * 10 * 0.25
+        console.log(prezzoScontato)
+        prezzoTot = prezzoTot - prezzoScontato
+        console.log(prezzoTot)
+      }
   }
 
 
-  prezzoOutputElement.innerHTML = prezzoTot
+
+
+  prezzoOutputElement.innerHTML = prezzoTot + ' Euro'
 
 })
