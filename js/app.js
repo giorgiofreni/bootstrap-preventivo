@@ -31,6 +31,19 @@ formElement.addEventListener('submit', function(event){
   console.log(prezzoOrario)
 
   let prezzoTot = prezzoOrario * 10
+  
+//   verifica codice promo
+  const promoCodeElement = document.getElementById('promoCode')
+  let validPromoCode = 'ciao'
+  let prezzoScontato = 0
+  if (validPromoCode === promoCodeElement.value) {
+    prezzoScontato = prezzoOrario * 10 * 0.25
+    console.log(prezzoScontato)
+    prezzoTot = prezzoTot - prezzoScontato
+    console.log(prezzoTot)
+  }
+
+
   prezzoOutputElement.innerHTML = prezzoTot
 
 })
