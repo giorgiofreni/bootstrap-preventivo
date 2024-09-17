@@ -10,33 +10,22 @@
 
     
     <!--HEADER-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+        <div class="container-fluid bg-dark">
+          <a class="navbar-brand text-white" href="#">Bool Factory</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent" >
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <a class="nav-link active text-white" aria-current="page" href="#">Servizi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link active text-white" aria-current="page" href="#">Contatti</a>
               </li>
             </ul>
             <!--
@@ -53,27 +42,28 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-sm-8">
                         <h1>Richiesta Preventivo</h1>
                         <p>Compila il form per richiedere un preventivo per i nsotri servizi di sviluppo.</p>
+                    
                         <!--Form-->
-                        <div class="container">
+                        <!-- <div class="row"> -->
                             <form id="form-preventivo" class="row g-3">
-                                <div class="col-md-6">
+                                <div class="col-12">
                                   <label for="inputNome" class="form-label">Nome</label>
                                   <input type="text" class="form-control" id="inputNome">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-12">
                                   <label for="inputCognome" class="form-label">Cognome</label>
                                   <input type="text" class="form-control" id="inputCognome">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-12">
                                     <label for="inputEmail" class="form-label">Email</label>
                                     <input type="email" class="form-control" id="inputEmail">
                                   </div>
                                 
                                   <!--tendina work-->
-                                <div class="col-md-4">
+                                <div class="col-12">
                                   <label for="Work" class="form-label">Tipo di lavoro</label>
                                   <select id="Work" class="form-select">
                                     <option selected value="">Seleziona il tipo di lavoro</option>
@@ -115,30 +105,34 @@
                             
                             
                               <!--pulsante-->
-                              <div class="col-12">
+                              <div class="col-sm-6 d-flex justify-content-center">
                                 <button type="submit" class="btn btn-primary">Calcola Preventivo</button>
                               </div>
 
                               <!-- prezzo totale-->
-                              <section>
-                                <div class="container">
-                                  <h2>Prezzo Finale</h2>
-                                  <p id="prezzoOutput"></p>
+                                <div class="col-sm-6">
+                                    <div class="col d-flex justify-content-center">
+                                        <div><h2>Prezzo Finale</h2></div>
+                                    </div>
+                                    <div class="col d-flex justify-content-center">
+                                        <div><p id="prezzoOutput"></p></div>
+                                    </div>
                                 </div>
-                              </section>
+                              
                             </form>
 
-                          </div>
-
-
-
-
                     </div>
+                    
 
+
+
+
+                
+            
                     <!--CARD-->
-                    <div class="col">
+                    <div class="col-sm-4">
                         
-                            <!--<img src="..." class="card-img-top" alt="...">-->
+                            <img src="https://picsum.photos/300/200" class="card-img-top" alt="...">
                             <div class="card-body">
                               <!--<h5 class="card-title">I nostri contatti</h5>
                               <p class="card-text">Se hai bisogno di aiuto puoi contattarci:</p>-->
@@ -154,7 +148,8 @@
                          </div>
                         
                     </div>
-                </div>
+                
+            </div>
             </div>
         </section>
     
