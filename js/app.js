@@ -51,6 +51,6 @@ formElement.addEventListener('submit', function(event){
 
 
 
-  prezzoOutputElement.innerHTML = prezzoTot + ' Euro'
+  prezzoOutputElement.innerHTML = '€ ' + prezzoTot + ' Euro'
 
 })
